@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Reveal } from "@/components/Reveal";
 import aboutImg from "@/assets/about-image.jpg";
 import { Target, Heart, Lightbulb, Shield } from "lucide-react";
+import { aboutPageJsonLd, breadcrumbJsonLd, canonicalLink, jsonLdScript, ogMeta } from "@/lib/seo";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -9,12 +10,22 @@ export const Route = createFileRoute("/about")({
       { title: "About Vedanyaa Infotech — Trusted Software Development Company" },
       { name: "description", content: "Vedanyaa Infotech is a boutique software studio built on craftsmanship, transparency and long-term partnership. Meet the team behind our work." },
       { name: "keywords", content: "about Vedanyaa Infotech, software development company, ERP development team, MERN developers" },
-      { property: "og:title", content: "About Vedanyaa Infotech" },
-      { property: "og:description", content: "Our story, values and how we partner with clients to ship reliable software." },
-      { property: "og:url", content: "/about" },
-      { property: "og:type", content: "website" },
+      ...ogMeta({
+        title: "About Vedanyaa Infotech",
+        description: "Our story, values and how we partner with clients to ship reliable software.",
+        path: "/about",
+      }),
     ],
-    links: [{ rel: "canonical", href: "/about" }],
+    links: [canonicalLink("/about")],
+    scripts: [
+      jsonLdScript(aboutPageJsonLd()),
+      jsonLdScript(
+        breadcrumbJsonLd([
+          { name: "Home", path: "/" },
+          { name: "About", path: "/about" },
+        ]),
+      ),
+    ],
   }),
   component: AboutPage,
 });

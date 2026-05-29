@@ -5,6 +5,7 @@ import {
 
 export const services = [
   {
+    slug: "custom-erp",
     icon: Settings2,
     title: "Custom ERP Solutions",
     tag: "Operational Excellence",
@@ -12,6 +13,7 @@ export const services = [
     points: ["Inventory & POS", "HR & Payroll", "Finance & Reports", "Role-based access"],
   },
   {
+    slug: "corporate-websites",
     icon: FileText,
     title: "Informative & Corporate Sites",
     tag: "Brand First",
@@ -19,6 +21,7 @@ export const services = [
     points: ["Brand storytelling", "Lightning fast", "SEO foundations", "CMS friendly"],
   },
   {
+    slug: "react-node-web-apps",
     icon: ServerCog,
     title: "Web Apps · React + Node",
     tag: "Full-Stack Engineering",
@@ -26,6 +29,7 @@ export const services = [
     points: ["React + TypeScript", "Node.js APIs", "Auth & RBAC", "Cloud deploy"],
   },
   {
+    slug: "mern-stack",
     icon: Layers,
     title: "MERN Stack Development",
     tag: "Full-Stack JavaScript",
@@ -33,6 +37,7 @@ export const services = [
     points: ["React & Redux", "Node & Express APIs", "MongoDB schemas", "Realtime features"],
   },
   {
+    slug: "nextjs-nestjs",
     icon: Rocket,
     title: "Next.js & Nest.js Apps",
     tag: "Enterprise Grade",
@@ -40,6 +45,7 @@ export const services = [
     points: ["SSR / SSG / ISR", "Nest.js microservices", "TypeScript end-to-end", "Edge deployment"],
   },
   {
+    slug: "php-development",
     icon: Code2,
     title: "PHP Development",
     tag: "Backend Mastery",
@@ -47,6 +53,7 @@ export const services = [
     points: ["Laravel & CodeIgniter", "RESTful APIs", "Legacy modernization", "Performance tuning"],
   },
   {
+    slug: "ai-web-experiences",
     icon: Sparkles,
     title: "AI-Powered Web Experiences",
     tag: "Next-Gen Interfaces",
@@ -54,6 +61,7 @@ export const services = [
     points: ["GenAI chat & search", "Personalised content", "Vector embeddings", "Realtime UX"],
   },
   {
+    slug: "ecommerce",
     icon: ShoppingBag,
     title: "E-commerce Websites",
     tag: "Built to Sell",
@@ -61,6 +69,7 @@ export const services = [
     points: ["Shopify & Woo", "Payment gateways", "Inventory sync", "Conversion design"],
   },
   {
+    slug: "ai-automation",
     icon: BrainCircuit,
     title: "AI-Driven Automation",
     tag: "Intelligent Systems",

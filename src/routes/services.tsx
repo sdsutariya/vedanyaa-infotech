@@ -1,8 +1,17 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Check, ArrowRight } from "lucide-react";
 import { services } from "@/data/services";
+import { faqs } from "@/data/faqs";
 import { Reveal } from "@/components/Reveal";
 import { FloatingOrbs } from "@/components/FloatingOrbs";
+import {
+  breadcrumbJsonLd,
+  canonicalLink,
+  faqPageJsonLd,
+  jsonLdScript,
+  ogMeta,
+  servicesItemListJsonLd,
+} from "@/lib/seo";
 
 export const Route = createFileRoute("/services")({
   head: () => ({
@@ -10,12 +19,23 @@ export const Route = createFileRoute("/services")({
       { title: "Services — PHP, MERN, Next.js, AI & ERP Development | Vedanyaa Infotech" },
       { name: "description", content: "Explore Vedanyaa Infotech's services: PHP, MERN, Next.js, Nest.js, AI-driven apps, e-commerce, corporate websites and custom ERP development." },
       { name: "keywords", content: "PHP development services, MERN stack services, Next.js development, AI development services, ERP development services, e-commerce development" },
-      { property: "og:title", content: "Services — Vedanyaa Infotech" },
-      { property: "og:description", content: "End-to-end web, AI and ERP engineering services for ambitious businesses." },
-      { property: "og:url", content: "/services" },
-      { property: "og:type", content: "website" },
+      ...ogMeta({
+        title: "Services — Vedanyaa Infotech",
+        description: "End-to-end web, AI and ERP engineering services for ambitious businesses.",
+        path: "/services",
+      }),
     ],
-    links: [{ rel: "canonical", href: "/services" }],
+    links: [canonicalLink("/services")],
+    scripts: [
+      jsonLdScript(servicesItemListJsonLd()),
+      jsonLdScript(faqPageJsonLd()),
+      jsonLdScript(
+        breadcrumbJsonLd([
+          { name: "Home", path: "/" },
+          { name: "Services", path: "/services" },
+        ]),
+      ),
+    ],
   }),
   component: ServicesPage,
 });
@@ -41,7 +61,7 @@ function ServicesPage() {
         <div className="max-w-7xl mx-auto px-6 lg:px-10 space-y-10">
           {services.map((s, i) => (
             <Reveal key={s.title} delay={0.05}>
-              <div className={`grid md:grid-cols-12 gap-10 p-10 md:p-14 rounded-2xl border border-border bg-card hover:border-gold/40 hover:-translate-y-1 hover:shadow-elegant transition-all duration-500 ${i % 2 === 1 ? "md:flex-row-reverse" : ""}`}>
+              <div id={s.slug} className={`grid md:grid-cols-12 gap-10 p-10 md:p-14 rounded-2xl border border-border bg-card hover:border-gold/40 hover:-translate-y-1 hover:shadow-elegant transition-all duration-500 ${i % 2 === 1 ? "md:flex-row-reverse" : ""}`}>
                 <div className="md:col-span-4">
                   <div className="w-16 h-16 rounded-xl bg-gold/10 border border-gold/30 flex items-center justify-center mb-6 group-hover:bg-gold transition-all">
                     <s.icon className="w-7 h-7 text-gold" />
@@ -63,6 +83,25 @@ function ServicesPage() {
               </div>
             </Reveal>
           ))}
+        </div>
+      </section>
+
+      <section className="py-20 border-t border-border/60 bg-muted/20">
+        <div className="max-w-4xl mx-auto px-6 lg:px-10">
+          <Reveal>
+            <div className="text-xs uppercase tracking-[0.3em] text-gold mb-4">FAQ</div>
+            <h2 className="font-display text-4xl md:text-5xl mb-12">Common questions about <span className="italic text-gradient-gold">our services</span></h2>
+          </Reveal>
+          <dl className="space-y-8">
+            {faqs.map((faq, i) => (
+              <Reveal key={faq.question} delay={i * 0.04}>
+                <div className="p-8 rounded-2xl border border-border bg-card">
+                  <dt className="font-display text-xl text-foreground">{faq.question}</dt>
+                  <dd className="mt-3 text-muted-foreground leading-relaxed">{faq.answer}</dd>
+                </div>
+              </Reveal>
+            ))}
+          </dl>
         </div>
       </section>
 

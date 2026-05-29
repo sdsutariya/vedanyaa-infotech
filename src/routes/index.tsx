@@ -7,6 +7,12 @@ import { Reveal } from "@/components/Reveal";
 import { AnimatedCounter } from "@/components/AnimatedCounter";
 import { FloatingOrbs } from "@/components/FloatingOrbs";
 import { TechMarquee } from "@/components/TechMarquee";
+import {
+  canonicalLink,
+  jsonLdScript,
+  ogMeta,
+  professionalServiceJsonLd,
+} from "@/lib/seo";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -14,23 +20,14 @@ export const Route = createFileRoute("/")({
       { title: "Vedanyaa Infotech — Premium Web, MERN, Next.js & ERP Development Company" },
       { name: "description", content: "Vedanyaa Infotech is a trusted software studio delivering PHP, MERN, Next.js, AI-driven apps, e-commerce and custom ERP solutions for businesses worldwide." },
       { name: "keywords", content: "software development company, ERP development company, MERN stack development, Next.js development, AI driven applications, e-commerce development, custom ERP, Vedanyaa Infotech" },
-      { property: "og:title", content: "Vedanyaa Infotech — Software, ERP & Web Development Company" },
-      { property: "og:description", content: "Boutique software studio engineering reliable digital products — MERN, Next.js, AI, e-commerce, ERP." },
-      { property: "og:url", content: "/" },
-    ],
-    links: [{ rel: "canonical", href: "/" }],
-    scripts: [{
-      type: "application/ld+json",
-      children: JSON.stringify({
-        "@context": "https://schema.org",
-        "@type": "ProfessionalService",
-        name: "Vedanyaa Infotech",
-        description: "Software development company specializing in MERN, Next.js, AI-driven apps, e-commerce and custom ERP.",
-        url: "/",
-        areaServed: "Worldwide",
-        serviceType: ["Web Development", "ERP Development", "MERN Stack", "Next.js Development", "AI Applications", "E-commerce Development"],
+      ...ogMeta({
+        title: "Vedanyaa Infotech — Software, ERP & Web Development Company",
+        description: "Boutique software studio engineering reliable digital products — MERN, Next.js, AI, e-commerce, ERP.",
+        path: "/",
       }),
-    }],
+    ],
+    links: [canonicalLink("/")],
+    scripts: [jsonLdScript(professionalServiceJsonLd())],
   }),
   component: Home,
 });

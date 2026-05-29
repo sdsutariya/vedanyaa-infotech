@@ -2,7 +2,7 @@ import { Q as QueryClient } from "../_libs/tanstack__query-core.mjs";
 import { Q as QueryClientProvider } from "../_libs/tanstack__react-query.mjs";
 import { b as createRouter, a as createRootRouteWithContext, u as useRouter, O as Outlet, H as HeadContent, S as Scripts, c as createFileRoute, l as lazyRouteComponent, L as Link } from "../_libs/tanstack__react-router.mjs";
 import { j as jsxRuntimeExports, r as reactExports } from "../_libs/react.mjs";
-import { X, i as Menu, M as Mail, P as Phone, h as MapPin, q as Sun, j as Moon } from "../_libs/lucide-react.mjs";
+import { X, i as Menu, M as Mail, h as MapPin, l as Settings2, F as FileText, k as ServerCog, L as Layers, R as Rocket, e as CodeXml, p as Sparkles, o as ShoppingBag, B as BrainCircuit, q as Sun, j as Moon } from "../_libs/lucide-react.mjs";
 import { A as AnimatePresence, m as motion } from "../_libs/framer-motion.mjs";
 import "../_libs/tanstack__router-core.mjs";
 import "../_libs/tanstack__history.mjs";
@@ -19,7 +19,7 @@ import "stream";
 import "../_libs/isbot.mjs";
 import "../_libs/motion-dom.mjs";
 import "../_libs/motion-utils.mjs";
-const appCss = "/assets/styles-UFNKj0qb.css";
+const appCss = "/assets/styles-zukIKbdF.css";
 function getInitial() {
   if (typeof document === "undefined") return "light";
   return document.documentElement.classList.contains("dark") ? "dark" : "light";
@@ -148,11 +148,7 @@ function Footer() {
         /* @__PURE__ */ jsxRuntimeExports.jsxs("ul", { className: "space-y-3 text-sm text-muted-foreground", children: [
           /* @__PURE__ */ jsxRuntimeExports.jsxs("li", { className: "flex gap-2", children: [
             /* @__PURE__ */ jsxRuntimeExports.jsx(Mail, { className: "w-4 h-4 text-gold mt-0.5" }),
-            " hello@vedanyaa.com"
-          ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("li", { className: "flex gap-2", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx(Phone, { className: "w-4 h-4 text-gold mt-0.5" }),
-            " +91 98765 43210"
+            " info.vedanyaa@gmail.com"
           ] }),
           /* @__PURE__ */ jsxRuntimeExports.jsxs("li", { className: "flex gap-2", children: [
             /* @__PURE__ */ jsxRuntimeExports.jsx(MapPin, { className: "w-4 h-4 text-gold mt-0.5" }),
@@ -171,6 +167,275 @@ function Footer() {
     ] }) })
   ] });
 }
+const rawUrl = "https://vedanyaa.com";
+const SITE = {
+  name: "Vedanyaa Infotech",
+  url: rawUrl.replace(/\/$/, ""),
+  email: "info.vedanyaa@gmail.com",
+  locale: "en_US",
+  description: "Vedanyaa Infotech is a trusted software development company building PHP, MERN, Next.js, AI-driven apps, e-commerce platforms and custom ERP solutions for global clients."
+};
+function absoluteUrl(path) {
+  if (!path || path === "/") return SITE.url;
+  const normalized = path.startsWith("/") ? path : `/${path}`;
+  return `${SITE.url}${normalized}`;
+}
+const faqs = [
+  {
+    question: "What services does Vedanyaa Infotech offer?",
+    answer: "Vedanyaa Infotech offers custom ERP solutions, corporate websites, React + Node web apps, MERN stack development, Next.js and Nest.js applications, PHP development (Laravel and CodeIgniter), AI-powered web experiences, e-commerce websites, and AI-driven automation including RAG pipelines and workflow automation."
+  },
+  {
+    question: "Who builds custom ERP systems in India?",
+    answer: "Vedanyaa Infotech builds custom ERP systems for businesses in India and worldwide. Our ERP solutions cover inventory, POS, HR, payroll, finance, CRM, analytics, and role-based access — tailored to each client's workflow."
+  },
+  {
+    question: "Does Vedanyaa Infotech do MERN stack development?",
+    answer: "Yes. Vedanyaa Infotech specializes in MERN stack development using MongoDB, Express, React, and Node.js. We deliver production-grade applications with reactive front-ends, REST APIs, MongoDB schemas, and real-time features."
+  },
+  {
+    question: "Does Vedanyaa build Next.js and Nest.js applications?",
+    answer: "Yes. Vedanyaa Infotech builds enterprise-grade applications with SSR-ready Next.js front-ends and type-safe Nest.js back-ends, including microservices, TypeScript end-to-end, and edge deployment."
+  },
+  {
+    question: "Can Vedanyaa Infotech build AI-driven applications?",
+    answer: "Yes. Vedanyaa Infotech develops AI-powered web experiences and AI-driven automation — including generative AI chat, smart search, personalised content, vector embeddings, RAG pipelines, custom LLM apps, and workflow automation."
+  },
+  {
+    question: "Does Vedanyaa develop e-commerce websites?",
+    answer: "Yes. Vedanyaa Infotech builds conversion-focused e-commerce stores on Shopify, WooCommerce, Magento, and custom MERN stacks, with secure payment gateways, inventory sync, and analytics."
+  },
+  {
+    question: "How do I hire Vedanyaa Infotech for a software project?",
+    answer: "Contact Vedanyaa Infotech at info.vedanyaa@gmail.com or visit vedanyaa.com/contact. Share your project goals and we respond within one business day with a free consultation, clear roadmap, and transparent estimate."
+  },
+  {
+    question: "Where is Vedanyaa Infotech located and who do they serve?",
+    answer: "Vedanyaa Infotech is based in India and serves clients globally on a remote-first basis. We partner with startups, enterprises, retailers, and manufacturers worldwide."
+  },
+  {
+    question: "What technologies does Vedanyaa Infotech use?",
+    answer: "Vedanyaa Infotech works with PHP (Laravel, CodeIgniter), React, Node.js, TypeScript, MongoDB, Express, Next.js, Nest.js, TanStack, AI/LLM integrations, Shopify, WooCommerce, and cloud deployment platforms."
+  },
+  {
+    question: "Why choose Vedanyaa Infotech for software development?",
+    answer: "Vedanyaa Infotech is a boutique software studio with seven years of experience, 120+ projects delivered, and a focus on clean architecture, transparent timelines, OWASP-aligned security, and long-term client partnerships."
+  }
+];
+const services = [
+  {
+    slug: "custom-erp",
+    icon: Settings2,
+    title: "Custom ERP Solutions",
+    tag: "Operational Excellence",
+    desc: "Tailored ERP systems that automate inventory, HR, finance, CRM and analytics — engineered around your unique workflow.",
+    points: ["Inventory & POS", "HR & Payroll", "Finance & Reports", "Role-based access"]
+  },
+  {
+    slug: "corporate-websites",
+    icon: FileText,
+    title: "Informative & Corporate Sites",
+    tag: "Brand First",
+    desc: "Elegant static and corporate websites that build trust, communicate clearly, and convert visitors into loyal clients.",
+    points: ["Brand storytelling", "Lightning fast", "SEO foundations", "CMS friendly"]
+  },
+  {
+    slug: "react-node-web-apps",
+    icon: ServerCog,
+    title: "Web Apps · React + Node",
+    tag: "Full-Stack Engineering",
+    desc: "Production-grade web applications with React front-ends and Node.js back-ends — secure, scalable and beautifully crafted.",
+    points: ["React + TypeScript", "Node.js APIs", "Auth & RBAC", "Cloud deploy"]
+  },
+  {
+    slug: "mern-stack",
+    icon: Layers,
+    title: "MERN Stack Development",
+    tag: "Full-Stack JavaScript",
+    desc: "Modern, reactive applications powered by MongoDB, Express, React and Node.js — smooth UX with rock-solid backends.",
+    points: ["React & Redux", "Node & Express APIs", "MongoDB schemas", "Realtime features"]
+  },
+  {
+    slug: "nextjs-nestjs",
+    icon: Rocket,
+    title: "Next.js & Nest.js Apps",
+    tag: "Enterprise Grade",
+    desc: "SSR-ready Next.js front-ends with type-safe Nest.js back-ends — microservices, edge deployment and DX that scales.",
+    points: ["SSR / SSG / ISR", "Nest.js microservices", "TypeScript end-to-end", "Edge deployment"]
+  },
+  {
+    slug: "php-development",
+    icon: CodeXml,
+    title: "PHP Development",
+    tag: "Backend Mastery",
+    desc: "Robust, secure and scalable PHP applications — from custom CMSs to high-performance APIs in Laravel and CodeIgniter.",
+    points: ["Laravel & CodeIgniter", "RESTful APIs", "Legacy modernization", "Performance tuning"]
+  },
+  {
+    slug: "ai-web-experiences",
+    icon: Sparkles,
+    title: "AI-Powered Web Experiences",
+    tag: "Next-Gen Interfaces",
+    desc: "Modern websites enhanced with generative AI — smart search, personalised content, AI assistants and conversational UX baked in.",
+    points: ["GenAI chat & search", "Personalised content", "Vector embeddings", "Realtime UX"]
+  },
+  {
+    slug: "ecommerce",
+    icon: ShoppingBag,
+    title: "E-commerce Websites",
+    tag: "Built to Sell",
+    desc: "Conversion-focused online stores on Shopify, WooCommerce, Magento and custom MERN — secure payments, rich analytics.",
+    points: ["Shopify & Woo", "Payment gateways", "Inventory sync", "Conversion design"]
+  },
+  {
+    slug: "ai-automation",
+    icon: BrainCircuit,
+    title: "AI-Driven Automation",
+    tag: "Intelligent Systems",
+    desc: "Custom AI agents, RAG pipelines and workflow automation that eliminate repetitive work and unlock smarter decisions.",
+    points: ["AI agents & RAG", "Workflow automation", "Custom LLM apps", "Data pipelines"]
+  }
+];
+function canonicalLink(path) {
+  return { rel: "canonical", href: absoluteUrl(path) };
+}
+function ogMeta({
+  title,
+  description,
+  path
+}) {
+  return [
+    { property: "og:title", content: title },
+    { property: "og:description", content: description },
+    { property: "og:url", content: absoluteUrl(path) },
+    { property: "og:type", content: "website" },
+    { property: "og:image", content: absoluteUrl("/favicon.png") }
+  ];
+}
+function jsonLdScript(data) {
+  return { type: "application/ld+json", children: JSON.stringify(data) };
+}
+function breadcrumbJsonLd(items) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: items.map((item, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      name: item.name,
+      item: absoluteUrl(item.path)
+    }))
+  };
+}
+function organizationJsonLd() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: SITE.name,
+    url: SITE.url,
+    logo: absoluteUrl("/favicon.png"),
+    description: SITE.description,
+    sameAs: [],
+    contactPoint: {
+      "@type": "ContactPoint",
+      email: SITE.email,
+      contactType: "customer support",
+      areaServed: "Worldwide"
+    }
+  };
+}
+function websiteJsonLd() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: SITE.name,
+    url: SITE.url
+  };
+}
+function professionalServiceJsonLd() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    name: SITE.name,
+    description: "Software development company specializing in MERN, Next.js, AI-driven apps, e-commerce and custom ERP.",
+    url: SITE.url,
+    areaServed: "Worldwide",
+    serviceType: [
+      "Web Development",
+      "ERP Development",
+      "MERN Stack",
+      "Next.js Development",
+      "AI Applications",
+      "E-commerce Development"
+    ],
+    hasOfferCatalog: {
+      "@type": "OfferCatalog",
+      name: "Software Development Services",
+      itemListElement: services.map((s) => ({
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          "@id": `${SITE.url}/services#${s.slug}`,
+          name: s.title,
+          description: s.desc,
+          provider: { "@type": "Organization", name: SITE.name }
+        }
+      }))
+    }
+  };
+}
+function servicesItemListJsonLd() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: "Vedanyaa Infotech Services",
+    itemListElement: services.map((s, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      item: {
+        "@type": "Service",
+        "@id": `${SITE.url}/services#${s.slug}`,
+        name: s.title,
+        description: s.desc,
+        provider: { "@type": "Organization", name: SITE.name, url: SITE.url },
+        areaServed: "Worldwide"
+      }
+    }))
+  };
+}
+function faqPageJsonLd() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((f) => ({
+      "@type": "Question",
+      name: f.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: f.answer
+      }
+    }))
+  };
+}
+function aboutPageJsonLd() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    name: `About ${SITE.name}`,
+    url: absoluteUrl("/about"),
+    description: "Vedanyaa Infotech is a boutique software studio built on craftsmanship, transparency and long-term partnership.",
+    mainEntity: { "@type": "Organization", name: SITE.name, url: SITE.url }
+  };
+}
+function contactPageJsonLd() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    name: `Contact ${SITE.name}`,
+    url: absoluteUrl("/contact"),
+    description: `Contact ${SITE.name} for software, ERP, MERN, Next.js, AI or e-commerce projects.`
+  };
+}
 function NotFoundComponent() {
   return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex min-h-screen items-center justify-center bg-background px-4", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "max-w-md text-center", children: [
     /* @__PURE__ */ jsxRuntimeExports.jsx("h1", { className: "text-8xl font-display text-gradient-gold", children: "404" }),
@@ -181,13 +446,13 @@ function NotFoundComponent() {
 }
 function ErrorComponent({ error, reset }) {
   console.error(error);
-  const router = useRouter();
+  const router2 = useRouter();
   return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex min-h-screen items-center justify-center bg-background px-4", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "max-w-md text-center", children: [
     /* @__PURE__ */ jsxRuntimeExports.jsx("h1", { className: "text-xl font-display text-foreground", children: "Something went wrong" }),
     /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "mt-2 text-sm text-muted-foreground", children: "Please try again or head back home." }),
     /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "mt-6 flex justify-center gap-2", children: [
       /* @__PURE__ */ jsxRuntimeExports.jsx("button", { onClick: () => {
-        router.invalidate();
+        router2.invalidate();
         reset();
       }, className: "px-5 py-2.5 rounded-md bg-gold text-primary-foreground text-sm uppercase tracking-wider", children: "Try again" }),
       /* @__PURE__ */ jsxRuntimeExports.jsx("a", { href: "/", className: "px-5 py-2.5 rounded-md border border-border text-sm uppercase tracking-wider", children: "Home" })
@@ -210,12 +475,12 @@ const Route$6 = createRootRouteWithContext()({
       { property: "og:title", content: "Vedanyaa Infotech — Premium Software, ERP & Web Development Company" },
       { property: "og:description", content: "Trusted partner for MERN, Next.js, AI-driven apps, e-commerce and custom ERP development." },
       { property: "og:type", content: "website" },
-      { property: "og:locale", content: "en_US" },
-      { property: "og:image", content: "/favicon.png" },
+      { property: "og:locale", content: SITE.locale },
+      { property: "og:image", content: absoluteUrl("/favicon.png") },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "Vedanyaa Infotech — Software & ERP Development" },
       { name: "twitter:description", content: "Boutique software studio engineering reliable digital products." },
-      { name: "twitter:image", content: "/favicon.png" }
+      { name: "twitter:image", content: absoluteUrl("/favicon.png") }
     ],
     links: [
       { rel: "stylesheet", href: appCss },
@@ -226,35 +491,7 @@ const Route$6 = createRootRouteWithContext()({
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" }
     ],
-    scripts: [
-      {
-        type: "application/ld+json",
-        children: JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "Organization",
-          name: "Vedanyaa Infotech",
-          url: "/",
-          logo: "/favicon.png",
-          description: "Software development company specializing in PHP, MERN, Next.js, Nest.js, AI-driven applications, e-commerce and custom ERP.",
-          sameAs: [],
-          contactPoint: {
-            "@type": "ContactPoint",
-            email: "hello@vedanyaa.com",
-            contactType: "customer support",
-            areaServed: "Worldwide"
-          }
-        })
-      },
-      {
-        type: "application/ld+json",
-        children: JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "WebSite",
-          name: "Vedanyaa Infotech",
-          url: "/"
-        })
-      }
-    ]
+    scripts: [jsonLdScript(organizationJsonLd()), jsonLdScript(websiteJsonLd())]
   }),
   shellComponent: RootShell,
   component: RootComponent,
@@ -282,7 +519,6 @@ function RootComponent() {
     /* @__PURE__ */ jsxRuntimeExports.jsx(Footer, {})
   ] }) });
 }
-const BASE_URL = "";
 const Route$5 = createFileRoute("/sitemap.xml")({
   server: {
     handlers: {
@@ -297,7 +533,7 @@ const Route$5 = createFileRoute("/sitemap.xml")({
         const urls = entries.map(
           (e) => [
             `  <url>`,
-            `    <loc>${BASE_URL}${e.path}</loc>`,
+            `    <loc>${absoluteUrl(e.path)}</loc>`,
             e.changefreq ? `    <changefreq>${e.changefreq}</changefreq>` : null,
             e.priority ? `    <priority>${e.priority}</priority>` : null,
             `  </url>`
@@ -316,7 +552,7 @@ const Route$5 = createFileRoute("/sitemap.xml")({
     }
   }
 });
-const $$splitComponentImporter$4 = () => import("./services-CSFyJ3CC.mjs");
+const $$splitComponentImporter$4 = () => import("./services-BCPqJALc.mjs");
 const Route$4 = createFileRoute("/services")({
   head: () => ({
     meta: [{
@@ -327,23 +563,19 @@ const Route$4 = createFileRoute("/services")({
     }, {
       name: "keywords",
       content: "PHP development services, MERN stack services, Next.js development, AI development services, ERP development services, e-commerce development"
+    }, ...ogMeta({
+      title: "Services — Vedanyaa Infotech",
+      description: "End-to-end web, AI and ERP engineering services for ambitious businesses.",
+      path: "/services"
+    })],
+    links: [canonicalLink("/services")],
+    scripts: [jsonLdScript(servicesItemListJsonLd()), jsonLdScript(faqPageJsonLd()), jsonLdScript(breadcrumbJsonLd([{
+      name: "Home",
+      path: "/"
     }, {
-      property: "og:title",
-      content: "Services — Vedanyaa Infotech"
-    }, {
-      property: "og:description",
-      content: "End-to-end web, AI and ERP engineering services for ambitious businesses."
-    }, {
-      property: "og:url",
-      content: "/services"
-    }, {
-      property: "og:type",
-      content: "website"
-    }],
-    links: [{
-      rel: "canonical",
-      href: "/services"
-    }]
+      name: "Services",
+      path: "/services"
+    }]))]
   }),
   component: lazyRouteComponent($$splitComponentImporter$4, "component")
 });
@@ -358,27 +590,23 @@ const Route$3 = createFileRoute("/portfolio")({
     }, {
       name: "keywords",
       content: "Vedanyaa Infotech portfolio, ERP case studies, MERN projects, AI app projects, e-commerce projects"
+    }, ...ogMeta({
+      title: "Portfolio — Vedanyaa Infotech",
+      description: "Selected work across ERP, e-commerce, AI and web platforms.",
+      path: "/portfolio"
+    })],
+    links: [canonicalLink("/portfolio")],
+    scripts: [jsonLdScript(breadcrumbJsonLd([{
+      name: "Home",
+      path: "/"
     }, {
-      property: "og:title",
-      content: "Portfolio — Vedanyaa Infotech"
-    }, {
-      property: "og:description",
-      content: "Selected work across ERP, e-commerce, AI and web platforms."
-    }, {
-      property: "og:url",
-      content: "/portfolio"
-    }, {
-      property: "og:type",
-      content: "website"
-    }],
-    links: [{
-      rel: "canonical",
-      href: "/portfolio"
-    }]
+      name: "Portfolio",
+      path: "/portfolio"
+    }]))]
   }),
   component: lazyRouteComponent($$splitComponentImporter$3, "component")
 });
-const $$splitComponentImporter$2 = () => import("./contact-B14V251M.mjs");
+const $$splitComponentImporter$2 = () => import("./contact-DM5ilHRv.mjs");
 const Route$2 = createFileRoute("/contact")({
   head: () => ({
     meta: [{
@@ -389,23 +617,19 @@ const Route$2 = createFileRoute("/contact")({
     }, {
       name: "keywords",
       content: "contact Vedanyaa Infotech, hire software developers, hire ERP developers, project consultation"
+    }, ...ogMeta({
+      title: "Contact Vedanyaa Infotech",
+      description: "Let's discuss your project — free consultation, clear estimates.",
+      path: "/contact"
+    })],
+    links: [canonicalLink("/contact")],
+    scripts: [jsonLdScript(contactPageJsonLd()), jsonLdScript(breadcrumbJsonLd([{
+      name: "Home",
+      path: "/"
     }, {
-      property: "og:title",
-      content: "Contact Vedanyaa Infotech"
-    }, {
-      property: "og:description",
-      content: "Let's discuss your project — free consultation, clear estimates."
-    }, {
-      property: "og:url",
-      content: "/contact"
-    }, {
-      property: "og:type",
-      content: "website"
-    }],
-    links: [{
-      rel: "canonical",
-      href: "/contact"
-    }]
+      name: "Contact",
+      path: "/contact"
+    }]))]
   }),
   component: lazyRouteComponent($$splitComponentImporter$2, "component")
 });
@@ -420,27 +644,23 @@ const Route$1 = createFileRoute("/about")({
     }, {
       name: "keywords",
       content: "about Vedanyaa Infotech, software development company, ERP development team, MERN developers"
+    }, ...ogMeta({
+      title: "About Vedanyaa Infotech",
+      description: "Our story, values and how we partner with clients to ship reliable software.",
+      path: "/about"
+    })],
+    links: [canonicalLink("/about")],
+    scripts: [jsonLdScript(aboutPageJsonLd()), jsonLdScript(breadcrumbJsonLd([{
+      name: "Home",
+      path: "/"
     }, {
-      property: "og:title",
-      content: "About Vedanyaa Infotech"
-    }, {
-      property: "og:description",
-      content: "Our story, values and how we partner with clients to ship reliable software."
-    }, {
-      property: "og:url",
-      content: "/about"
-    }, {
-      property: "og:type",
-      content: "website"
-    }],
-    links: [{
-      rel: "canonical",
-      href: "/about"
-    }]
+      name: "About",
+      path: "/about"
+    }]))]
   }),
   component: lazyRouteComponent($$splitComponentImporter$1, "component")
 });
-const $$splitComponentImporter = () => import("./index-k36EOzlR.mjs");
+const $$splitComponentImporter = () => import("./index-CnG0sHtg.mjs");
 const Route = createFileRoute("/")({
   head: () => ({
     meta: [{
@@ -451,32 +671,13 @@ const Route = createFileRoute("/")({
     }, {
       name: "keywords",
       content: "software development company, ERP development company, MERN stack development, Next.js development, AI driven applications, e-commerce development, custom ERP, Vedanyaa Infotech"
-    }, {
-      property: "og:title",
-      content: "Vedanyaa Infotech — Software, ERP & Web Development Company"
-    }, {
-      property: "og:description",
-      content: "Boutique software studio engineering reliable digital products — MERN, Next.js, AI, e-commerce, ERP."
-    }, {
-      property: "og:url",
-      content: "/"
-    }],
-    links: [{
-      rel: "canonical",
-      href: "/"
-    }],
-    scripts: [{
-      type: "application/ld+json",
-      children: JSON.stringify({
-        "@context": "https://schema.org",
-        "@type": "ProfessionalService",
-        name: "Vedanyaa Infotech",
-        description: "Software development company specializing in MERN, Next.js, AI-driven apps, e-commerce and custom ERP.",
-        url: "/",
-        areaServed: "Worldwide",
-        serviceType: ["Web Development", "ERP Development", "MERN Stack", "Next.js Development", "AI Applications", "E-commerce Development"]
-      })
-    }]
+    }, ...ogMeta({
+      title: "Vedanyaa Infotech — Software, ERP & Web Development Company",
+      description: "Boutique software studio engineering reliable digital products — MERN, Next.js, AI, e-commerce, ERP.",
+      path: "/"
+    })],
+    links: [canonicalLink("/")],
+    scripts: [jsonLdScript(professionalServiceJsonLd())]
   }),
   component: lazyRouteComponent($$splitComponentImporter, "component")
 });
@@ -521,14 +722,20 @@ const rootRouteChildren = {
 const routeTree = Route$6._addFileChildren(rootRouteChildren)._addFileTypes();
 const getRouter = () => {
   const queryClient = new QueryClient();
-  const router = createRouter({
+  const router2 = createRouter({
     routeTree,
     context: { queryClient },
     scrollRestoration: true,
     defaultPreloadStaleTime: 0
   });
-  return router;
+  return router2;
 };
-export {
+const router = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
   getRouter
+}, Symbol.toStringTag, { value: "Module" }));
+export {
+  faqs as f,
+  router as r,
+  services as s
 };

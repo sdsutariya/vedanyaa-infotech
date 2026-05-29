@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Reveal } from "@/components/Reveal";
 import { FloatingOrbs } from "@/components/FloatingOrbs";
 import { Mail, MapPin, Send, CheckCircle2 } from "lucide-react";
+import { breadcrumbJsonLd, canonicalLink, contactPageJsonLd, jsonLdScript, ogMeta } from "@/lib/seo";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
@@ -10,12 +11,22 @@ export const Route = createFileRoute("/contact")({
       { title: "Contact Vedanyaa Infotech — Hire Our Software & ERP Team" },
       { name: "description", content: "Contact Vedanyaa Infotech to discuss your software, ERP, MERN, Next.js, AI or e-commerce project. Free consultation and clear estimates." },
       { name: "keywords", content: "contact Vedanyaa Infotech, hire software developers, hire ERP developers, project consultation" },
-      { property: "og:title", content: "Contact Vedanyaa Infotech" },
-      { property: "og:description", content: "Let's discuss your project — free consultation, clear estimates." },
-      { property: "og:url", content: "/contact" },
-      { property: "og:type", content: "website" },
+      ...ogMeta({
+        title: "Contact Vedanyaa Infotech",
+        description: "Let's discuss your project — free consultation, clear estimates.",
+        path: "/contact",
+      }),
     ],
-    links: [{ rel: "canonical", href: "/contact" }],
+    links: [canonicalLink("/contact")],
+    scripts: [
+      jsonLdScript(contactPageJsonLd()),
+      jsonLdScript(
+        breadcrumbJsonLd([
+          { name: "Home", path: "/" },
+          { name: "Contact", path: "/contact" },
+        ]),
+      ),
+    ],
   }),
   component: Contact,
 });

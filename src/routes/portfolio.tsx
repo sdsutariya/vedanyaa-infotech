@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Reveal } from "@/components/Reveal";
 import { ArrowUpRight } from "lucide-react";
+import { breadcrumbJsonLd, canonicalLink, jsonLdScript, ogMeta } from "@/lib/seo";
 
 export const Route = createFileRoute("/portfolio")({
   head: () => ({
@@ -8,12 +9,21 @@ export const Route = createFileRoute("/portfolio")({
       { title: "Portfolio — ERP, MERN, AI & E-commerce Projects | Vedanyaa Infotech" },
       { name: "description", content: "Selected work by Vedanyaa Infotech: custom ERP, e-commerce platforms, MERN applications, AI-driven apps and corporate websites." },
       { name: "keywords", content: "Vedanyaa Infotech portfolio, ERP case studies, MERN projects, AI app projects, e-commerce projects" },
-      { property: "og:title", content: "Portfolio — Vedanyaa Infotech" },
-      { property: "og:description", content: "Selected work across ERP, e-commerce, AI and web platforms." },
-      { property: "og:url", content: "/portfolio" },
-      { property: "og:type", content: "website" },
+      ...ogMeta({
+        title: "Portfolio — Vedanyaa Infotech",
+        description: "Selected work across ERP, e-commerce, AI and web platforms.",
+        path: "/portfolio",
+      }),
     ],
-    links: [{ rel: "canonical", href: "/portfolio" }],
+    links: [canonicalLink("/portfolio")],
+    scripts: [
+      jsonLdScript(
+        breadcrumbJsonLd([
+          { name: "Home", path: "/" },
+          { name: "Portfolio", path: "/portfolio" },
+        ]),
+      ),
+    ],
   }),
   component: Portfolio,
 });

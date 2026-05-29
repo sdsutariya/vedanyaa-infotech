@@ -75,17 +75,17 @@ const createLucideIcon = (iconName, iconNode) => {
   Component.displayName = toPascalCase(iconName);
   return Component;
 };
-const __iconNode$v = [
+const __iconNode$u = [
   ["path", { d: "M5 12h14", key: "1ays0h" }],
   ["path", { d: "m12 5 7 7-7 7", key: "xquz4c" }]
 ];
-const ArrowRight = createLucideIcon("arrow-right", __iconNode$v);
-const __iconNode$u = [
+const ArrowRight = createLucideIcon("arrow-right", __iconNode$u);
+const __iconNode$t = [
   ["path", { d: "M7 7h10v10", key: "1tivn9" }],
   ["path", { d: "M7 17 17 7", key: "1vkiza" }]
 ];
-const ArrowUpRight = createLucideIcon("arrow-up-right", __iconNode$u);
-const __iconNode$t = [
+const ArrowUpRight = createLucideIcon("arrow-up-right", __iconNode$t);
+const __iconNode$s = [
   [
     "path",
     {
@@ -95,8 +95,8 @@ const __iconNode$t = [
   ],
   ["circle", { cx: "12", cy: "8", r: "6", key: "1vp47v" }]
 ];
-const Award = createLucideIcon("award", __iconNode$t);
-const __iconNode$s = [
+const Award = createLucideIcon("award", __iconNode$s);
+const __iconNode$r = [
   [
     "path",
     {
@@ -117,26 +117,26 @@ const __iconNode$s = [
   ["circle", { cx: "20", cy: "21", r: ".5", key: "yhc1fs" }],
   ["circle", { cx: "20", cy: "8", r: ".5", key: "1e43v0" }]
 ];
-const BrainCircuit = createLucideIcon("brain-circuit", __iconNode$s);
-const __iconNode$r = [["path", { d: "M20 6 9 17l-5-5", key: "1gmf2c" }]];
-const Check = createLucideIcon("check", __iconNode$r);
-const __iconNode$q = [
+const BrainCircuit = createLucideIcon("brain-circuit", __iconNode$r);
+const __iconNode$q = [["path", { d: "M20 6 9 17l-5-5", key: "1gmf2c" }]];
+const Check = createLucideIcon("check", __iconNode$q);
+const __iconNode$p = [
   ["circle", { cx: "12", cy: "12", r: "10", key: "1mglay" }],
   ["path", { d: "m9 12 2 2 4-4", key: "dzmm74" }]
 ];
-const CircleCheck = createLucideIcon("circle-check", __iconNode$q);
-const __iconNode$p = [
+const CircleCheck = createLucideIcon("circle-check", __iconNode$p);
+const __iconNode$o = [
   ["circle", { cx: "12", cy: "12", r: "10", key: "1mglay" }],
   ["path", { d: "M12 6v6l4 2", key: "mmk7yg" }]
 ];
-const Clock = createLucideIcon("clock", __iconNode$p);
-const __iconNode$o = [
+const Clock = createLucideIcon("clock", __iconNode$o);
+const __iconNode$n = [
   ["path", { d: "m18 16 4-4-4-4", key: "1inbqp" }],
   ["path", { d: "m6 8-4 4 4 4", key: "15zrgr" }],
   ["path", { d: "m14.5 4-5 16", key: "e7oirm" }]
 ];
-const CodeXml = createLucideIcon("code-xml", __iconNode$o);
-const __iconNode$n = [
+const CodeXml = createLucideIcon("code-xml", __iconNode$n);
+const __iconNode$m = [
   [
     "path",
     {
@@ -149,14 +149,14 @@ const __iconNode$n = [
   ["path", { d: "M16 13H8", key: "t4e002" }],
   ["path", { d: "M16 17H8", key: "z1uh3a" }]
 ];
-const FileText = createLucideIcon("file-text", __iconNode$n);
-const __iconNode$m = [
+const FileText = createLucideIcon("file-text", __iconNode$m);
+const __iconNode$l = [
   ["circle", { cx: "12", cy: "12", r: "10", key: "1mglay" }],
   ["path", { d: "M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20", key: "13o1zl" }],
   ["path", { d: "M2 12h20", key: "9i4pu4" }]
 ];
-const Globe = createLucideIcon("globe", __iconNode$m);
-const __iconNode$l = [
+const Globe = createLucideIcon("globe", __iconNode$l);
+const __iconNode$k = [
   [
     "path",
     {
@@ -165,8 +165,8 @@ const __iconNode$l = [
     }
   ]
 ];
-const Heart = createLucideIcon("heart", __iconNode$l);
-const __iconNode$k = [
+const Heart = createLucideIcon("heart", __iconNode$k);
+const __iconNode$j = [
   [
     "path",
     {
@@ -189,8 +189,8 @@ const __iconNode$k = [
     }
   ]
 ];
-const Layers = createLucideIcon("layers", __iconNode$k);
-const __iconNode$j = [
+const Layers = createLucideIcon("layers", __iconNode$j);
+const __iconNode$i = [
   [
     "path",
     {
@@ -201,18 +201,18 @@ const __iconNode$j = [
   ["path", { d: "M9 18h6", key: "x1upvd" }],
   ["path", { d: "M10 22h4", key: "ceow96" }]
 ];
-const Lightbulb = createLucideIcon("lightbulb", __iconNode$j);
-const __iconNode$i = [
+const Lightbulb = createLucideIcon("lightbulb", __iconNode$i);
+const __iconNode$h = [
   ["rect", { width: "18", height: "11", x: "3", y: "11", rx: "2", ry: "2", key: "1w4ew1" }],
   ["path", { d: "M7 11V7a5 5 0 0 1 10 0v4", key: "fwvmzm" }]
 ];
-const Lock = createLucideIcon("lock", __iconNode$i);
-const __iconNode$h = [
+const Lock = createLucideIcon("lock", __iconNode$h);
+const __iconNode$g = [
   ["path", { d: "m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7", key: "132q7q" }],
   ["rect", { x: "2", y: "4", width: "20", height: "16", rx: "2", key: "izxlao" }]
 ];
-const Mail = createLucideIcon("mail", __iconNode$h);
-const __iconNode$g = [
+const Mail = createLucideIcon("mail", __iconNode$g);
+const __iconNode$f = [
   [
     "path",
     {
@@ -222,14 +222,14 @@ const __iconNode$g = [
   ],
   ["circle", { cx: "12", cy: "10", r: "3", key: "ilqhr7" }]
 ];
-const MapPin = createLucideIcon("map-pin", __iconNode$g);
-const __iconNode$f = [
+const MapPin = createLucideIcon("map-pin", __iconNode$f);
+const __iconNode$e = [
   ["path", { d: "M4 5h16", key: "1tepv9" }],
   ["path", { d: "M4 12h16", key: "1lakjw" }],
   ["path", { d: "M4 19h16", key: "1djgab" }]
 ];
-const Menu = createLucideIcon("menu", __iconNode$f);
-const __iconNode$e = [
+const Menu = createLucideIcon("menu", __iconNode$e);
+const __iconNode$d = [
   [
     "path",
     {
@@ -238,17 +238,7 @@ const __iconNode$e = [
     }
   ]
 ];
-const Moon = createLucideIcon("moon", __iconNode$e);
-const __iconNode$d = [
-  [
-    "path",
-    {
-      d: "M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384",
-      key: "9njp5v"
-    }
-  ]
-];
-const Phone = createLucideIcon("phone", __iconNode$d);
+const Moon = createLucideIcon("moon", __iconNode$d);
 const __iconNode$c = [
   ["path", { d: "M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5", key: "qeys4" }],
   [
@@ -408,7 +398,6 @@ export {
   Heart as H,
   Layers as L,
   Mail as M,
-  Phone as P,
   Rocket as R,
   Send as S,
   Target as T,

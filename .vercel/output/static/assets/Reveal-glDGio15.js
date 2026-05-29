@@ -1,0 +1,1 @@
+import{j as o,m as a}from"./index-BZTONFDr.js";const e={hidden:{opacity:0,y:30},show:{opacity:1,y:0,transition:{duration:.7,ease:[.22,1,.36,1]}}};function r({children:i,delay:t=0,className:n}){return o.jsx(a.div,{className:n,initial:"hidden",whileInView:"show",viewport:{once:!0,amount:.2},variants:e,transition:{delay:t},children:i})}export{r as R};

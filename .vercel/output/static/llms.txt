@@ -1,0 +1,36 @@
+# Vedanyaa Infotech
+
+> Vedanyaa Infotech is a boutique software development company based in India, serving clients worldwide. We build custom ERP systems, MERN and Next.js applications, AI-driven apps, e-commerce platforms, PHP backends, and corporate websites.
+
+## Services
+
+- Custom ERP Solutions — inventory, HR, payroll, finance, CRM, analytics
+- Informative & Corporate Websites — fast, SEO-ready, brand-focused
+- Web Apps (React + Node) — TypeScript, APIs, auth, cloud deployment
+- MERN Stack Development — MongoDB, Express, React, Node.js
+- Next.js & Nest.js Apps — SSR/SSG, microservices, TypeScript end-to-end
+- PHP Development — Laravel, CodeIgniter, REST APIs
+- AI-Powered Web Experiences — GenAI chat, smart search, vector embeddings
+- E-commerce Websites — Shopify, WooCommerce, Magento, custom MERN stores
+- AI-Driven Automation — RAG pipelines, AI agents, workflow automation, custom LLM apps
+
+## Technologies
+
+PHP, Laravel, CodeIgniter, React, Node.js, TypeScript, MongoDB, Express, Next.js, Nest.js, TanStack, AI/LLM, Shopify, WooCommerce, Vercel, Cloudflare
+
+## Contact
+
+- Email: info.vedanyaa@gmail.com
+- Location: India · Serving Globally
+
+## Key Pages
+
+- Home: https://vedanyaa.com/
+- Services: https://vedanyaa.com/services
+- Portfolio: https://vedanyaa.com/portfolio
+- About: https://vedanyaa.com/about
+- Contact: https://vedanyaa.com/contact
+
+## Optional
+
+- Sitemap: https://vedanyaa.com/sitemap.xml

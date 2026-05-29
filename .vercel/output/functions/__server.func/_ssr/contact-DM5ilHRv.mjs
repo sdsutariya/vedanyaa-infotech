@@ -1,7 +1,7 @@
 import { r as reactExports, j as jsxRuntimeExports } from "../_libs/react.mjs";
 import { R as Reveal } from "./Reveal-Def4au4x.mjs";
 import { F as FloatingOrbs } from "./FloatingOrbs-DtkNFnNw.mjs";
-import { M as Mail, P as Phone, h as MapPin, c as CircleCheck, S as Send } from "../_libs/lucide-react.mjs";
+import { M as Mail, h as MapPin, c as CircleCheck, S as Send } from "../_libs/lucide-react.mjs";
 import "../_libs/framer-motion.mjs";
 import "../_libs/motion-dom.mjs";
 import "../_libs/motion-utils.mjs";
@@ -25,11 +25,7 @@ function Contact() {
         /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "space-y-6", children: [{
           icon: Mail,
           label: "Email",
-          value: "hello@vedanyaa.com"
-        }, {
-          icon: Phone,
-          label: "Phone",
-          value: "+91 98765 43210"
+          value: "info.vedanyaa@gmail.com"
         }, {
           icon: MapPin,
           label: "Location",

@@ -1,6 +1,6 @@
 import { j as jsxRuntimeExports } from "../_libs/react.mjs";
 import { L as Link } from "../_libs/tanstack__react-router.mjs";
-import { s as services } from "./services-DXlM-ABb.mjs";
+import { s as services, f as faqs } from "./router-UsntH5Eo.mjs";
 import { R as Reveal } from "./Reveal-Def4au4x.mjs";
 import { F as FloatingOrbs } from "./FloatingOrbs-DtkNFnNw.mjs";
 import { C as Check, A as ArrowRight } from "../_libs/lucide-react.mjs";
@@ -17,6 +17,8 @@ import "crypto";
 import "async_hooks";
 import "stream";
 import "../_libs/isbot.mjs";
+import "../_libs/tanstack__query-core.mjs";
+import "../_libs/tanstack__react-query.mjs";
 import "../_libs/framer-motion.mjs";
 import "../_libs/motion-dom.mjs";
 import "../_libs/motion-utils.mjs";
@@ -33,7 +35,7 @@ function ServicesPage() {
         /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "mt-6 max-w-2xl text-muted-foreground text-lg", children: "A focused offering of nine disciplines, each delivered with the same attention to detail, security and craft." })
       ] }) })
     ] }),
-    /* @__PURE__ */ jsxRuntimeExports.jsx("section", { className: "py-20", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "max-w-7xl mx-auto px-6 lg:px-10 space-y-10", children: services.map((s, i) => /* @__PURE__ */ jsxRuntimeExports.jsx(Reveal, { delay: 0.05, children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: `grid md:grid-cols-12 gap-10 p-10 md:p-14 rounded-2xl border border-border bg-card hover:border-gold/40 hover:-translate-y-1 hover:shadow-elegant transition-all duration-500 ${i % 2 === 1 ? "md:flex-row-reverse" : ""}`, children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsx("section", { className: "py-20", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "max-w-7xl mx-auto px-6 lg:px-10 space-y-10", children: services.map((s, i) => /* @__PURE__ */ jsxRuntimeExports.jsx(Reveal, { delay: 0.05, children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { id: s.slug, className: `grid md:grid-cols-12 gap-10 p-10 md:p-14 rounded-2xl border border-border bg-card hover:border-gold/40 hover:-translate-y-1 hover:shadow-elegant transition-all duration-500 ${i % 2 === 1 ? "md:flex-row-reverse" : ""}`, children: [
       /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "md:col-span-4", children: [
         /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-16 h-16 rounded-xl bg-gold/10 border border-gold/30 flex items-center justify-center mb-6 group-hover:bg-gold transition-all", children: /* @__PURE__ */ jsxRuntimeExports.jsx(s.icon, { className: "w-7 h-7 text-gold" }) }),
         /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "text-xs uppercase tracking-[0.3em] text-gold mb-2", children: s.tag }),
@@ -47,6 +49,19 @@ function ServicesPage() {
         ] }, p)) })
       ] })
     ] }) }, s.title)) }) }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx("section", { className: "py-20 border-t border-border/60 bg-muted/20", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "max-w-4xl mx-auto px-6 lg:px-10", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsxs(Reveal, { children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "text-xs uppercase tracking-[0.3em] text-gold mb-4", children: "FAQ" }),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("h2", { className: "font-display text-4xl md:text-5xl mb-12", children: [
+          "Common questions about ",
+          /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "italic text-gradient-gold", children: "our services" })
+        ] })
+      ] }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx("dl", { className: "space-y-8", children: faqs.map((faq, i) => /* @__PURE__ */ jsxRuntimeExports.jsx(Reveal, { delay: i * 0.04, children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "p-8 rounded-2xl border border-border bg-card", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx("dt", { className: "font-display text-xl text-foreground", children: faq.question }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("dd", { className: "mt-3 text-muted-foreground leading-relaxed", children: faq.answer })
+      ] }) }, faq.question)) })
+    ] }) }),
     /* @__PURE__ */ jsxRuntimeExports.jsx("section", { className: "py-20 border-t border-border/60", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "max-w-4xl mx-auto px-6 lg:px-10 text-center", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(Reveal, { children: [
       /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "font-display text-4xl md:text-5xl", children: "Have a project in mind?" }),
       /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "mt-4 text-muted-foreground text-lg", children: "Tell us about your goals. We'll send back a clear roadmap and estimate." }),

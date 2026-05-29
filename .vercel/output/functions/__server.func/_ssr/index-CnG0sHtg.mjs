@@ -1,6 +1,6 @@
 import { j as jsxRuntimeExports, r as reactExports } from "../_libs/react.mjs";
 import { L as Link } from "../_libs/tanstack__react-router.mjs";
-import { s as services } from "./services-DXlM-ABb.mjs";
+import { s as services } from "./router-UsntH5Eo.mjs";
 import { R as Reveal } from "./Reveal-Def4au4x.mjs";
 import { F as FloatingOrbs } from "./FloatingOrbs-DtkNFnNw.mjs";
 import { m as motion, a as useMotionValue, b as useSpring, u as useInView } from "../_libs/framer-motion.mjs";
@@ -18,6 +18,8 @@ import "crypto";
 import "async_hooks";
 import "stream";
 import "../_libs/isbot.mjs";
+import "../_libs/tanstack__query-core.mjs";
+import "../_libs/tanstack__react-query.mjs";
 import "../_libs/motion-dom.mjs";
 import "../_libs/motion-utils.mjs";
 const heroBg = "/assets/hero-bg-B6AxNyL7.jpg";

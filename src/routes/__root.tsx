@@ -10,6 +10,8 @@ import {
 import appCss from "../styles.css?url";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
+import { SITE, absoluteUrl } from "@/lib/site";
+import { jsonLdScript, organizationJsonLd, websiteJsonLd } from "@/lib/seo";
 
 function NotFoundComponent() {
   return (
@@ -61,12 +63,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:title", content: "Vedanyaa Infotech — Premium Software, ERP & Web Development Company" },
       { property: "og:description", content: "Trusted partner for MERN, Next.js, AI-driven apps, e-commerce and custom ERP development." },
       { property: "og:type", content: "website" },
-      { property: "og:locale", content: "en_US" },
-      { property: "og:image", content: "/favicon.png" },
+      { property: "og:locale", content: SITE.locale },
+      { property: "og:image", content: absoluteUrl("/favicon.png") },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "Vedanyaa Infotech — Software & ERP Development" },
       { name: "twitter:description", content: "Boutique software studio engineering reliable digital products." },
-      { name: "twitter:image", content: "/favicon.png" },
+      { name: "twitter:image", content: absoluteUrl("/favicon.png") },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
@@ -77,35 +79,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" },
     ],
-    scripts: [
-      {
-        type: "application/ld+json",
-        children: JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "Organization",
-          name: "Vedanyaa Infotech",
-          url: "/",
-          logo: "/favicon.png",
-          description: "Software development company specializing in PHP, MERN, Next.js, Nest.js, AI-driven applications, e-commerce and custom ERP.",
-          sameAs: [],
-          contactPoint: {
-            "@type": "ContactPoint",
-            email: "info.vedanyaa@gmail.com",
-            contactType: "customer support",
-            areaServed: "Worldwide",
-          },
-        }),
-      },
-      {
-        type: "application/ld+json",
-        children: JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "WebSite",
-          name: "Vedanyaa Infotech",
-          url: "/",
-        }),
-      },
-    ],
+    scripts: [jsonLdScript(organizationJsonLd()), jsonLdScript(websiteJsonLd())],
   }),
   shellComponent: RootShell,
   component: RootComponent,
