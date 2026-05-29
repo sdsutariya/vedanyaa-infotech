@@ -1,6 +1,13 @@
 import {
-  Code2, Layers, Rocket, Sparkles, ShoppingBag, FileText, Settings2,
-  BrainCircuit, ServerCog,
+  Code2,
+  Layers,
+  Rocket,
+  Sparkles,
+  ShoppingBag,
+  FileText,
+  Settings2,
+  BrainCircuit,
+  ServerCog,
 } from "lucide-react";
 
 export const services = [
@@ -37,7 +44,12 @@ export const services = [
     title: "Next.js & Nest.js Apps",
     tag: "Enterprise Grade",
     desc: "SSR-ready Next.js front-ends with type-safe Nest.js back-ends — microservices, edge deployment and DX that scales.",
-    points: ["SSR / SSG / ISR", "Nest.js microservices", "TypeScript end-to-end", "Edge deployment"],
+    points: [
+      "SSR / SSG / ISR",
+      "Nest.js microservices",
+      "TypeScript end-to-end",
+      "Edge deployment",
+    ],
   },
   {
     icon: Code2,

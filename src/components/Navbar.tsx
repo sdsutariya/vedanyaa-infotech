@@ -19,15 +19,31 @@ export function Navbar() {
       <div className="max-w-7xl mx-auto px-6 lg:px-10 h-20 flex items-center justify-between">
         <Link to="/" className="flex items-center gap-3 group">
           <div className="relative w-11 h-11 rounded-xl bg-gradient-to-br from-[color:var(--gold)] to-[color:var(--gold-soft)] flex items-center justify-center shadow-gold overflow-hidden">
-            <svg viewBox="0 0 32 32" className="w-7 h-7" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
-              <path d="M5 6 L16 26 L27 6" stroke="white" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+            <svg
+              viewBox="0 0 32 32"
+              className="w-7 h-7"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden
+            >
+              <path
+                d="M5 6 L16 26 L27 6"
+                stroke="white"
+                strokeWidth="3"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
               <circle cx="16" cy="26" r="2.4" fill="white" />
             </svg>
             <span className="pointer-events-none absolute inset-0 bg-gradient-to-tr from-transparent via-white/20 to-transparent" />
           </div>
           <div className="leading-tight">
-            <div className="font-display text-lg font-semibold text-foreground tracking-tight">Vedanyaa</div>
-            <div className="text-[10px] tracking-[0.3em] uppercase text-gold font-medium">Infotech</div>
+            <div className="font-display text-lg font-semibold text-foreground tracking-tight">
+              Vedanyaa
+            </div>
+            <div className="text-[10px] tracking-[0.3em] uppercase text-gold font-medium">
+              Infotech
+            </div>
           </div>
         </Link>
         <nav className="hidden md:flex items-center gap-10">

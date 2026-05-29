@@ -21,7 +21,11 @@ export function ThemeToggle() {
     const root = document.documentElement;
     if (next === "dark") root.classList.add("dark");
     else root.classList.remove("dark");
-    try { localStorage.setItem("theme", next); } catch {}
+    try {
+      localStorage.setItem("theme", next);
+    } catch {
+      // Ignore storage errors in restricted browsing contexts.
+    }
   };
 
   return (
