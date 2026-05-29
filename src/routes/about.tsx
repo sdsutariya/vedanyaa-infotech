@@ -7,21 +7,10 @@ export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
       { title: "About Vedanyaa Infotech — Trusted Software Development Company" },
-      {
-        name: "description",
-        content:
-          "Vedanyaa Infotech is a boutique software studio built on craftsmanship, transparency and long-term partnership. Meet the team behind our work.",
-      },
-      {
-        name: "keywords",
-        content:
-          "about Vedanyaa Infotech, software development company, ERP development team, MERN developers",
-      },
+      { name: "description", content: "Vedanyaa Infotech is a boutique software studio built on craftsmanship, transparency and long-term partnership. Meet the team behind our work." },
+      { name: "keywords", content: "about Vedanyaa Infotech, software development company, ERP development team, MERN developers" },
       { property: "og:title", content: "About Vedanyaa Infotech" },
-      {
-        property: "og:description",
-        content: "Our story, values and how we partner with clients to ship reliable software.",
-      },
+      { property: "og:description", content: "Our story, values and how we partner with clients to ship reliable software." },
       { property: "og:url", content: "/about" },
       { property: "og:type", content: "website" },
     ],
@@ -30,23 +19,12 @@ export const Route = createFileRoute("/about")({
   component: AboutPage,
 });
 
+
 const values = [
-  {
-    icon: Target,
-    t: "Precision",
-    d: "We obsess over the details others overlook — from pixel alignment to query plans.",
-  },
+  { icon: Target, t: "Precision", d: "We obsess over the details others overlook — from pixel alignment to query plans." },
   { icon: Heart, t: "Partnership", d: "We invest in long-term relationships, not transactions." },
-  {
-    icon: Lightbulb,
-    t: "Curiosity",
-    d: "We stay ahead of the curve, constantly exploring new frameworks and patterns.",
-  },
-  {
-    icon: Shield,
-    t: "Integrity",
-    d: "Transparent estimates, honest timelines, and code we'd be proud to sign.",
-  },
+  { icon: Lightbulb, t: "Curiosity", d: "We stay ahead of the curve, constantly exploring new frameworks and patterns." },
+  { icon: Shield, t: "Integrity", d: "Transparent estimates, honest timelines, and code we'd be proud to sign." },
 ];
 
 function AboutPage() {
@@ -56,10 +34,7 @@ function AboutPage() {
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <Reveal>
             <div className="text-xs uppercase tracking-[0.3em] text-gold mb-4">About Us</div>
-            <h1 className="font-display text-5xl md:text-7xl max-w-4xl">
-              A small studio with a{" "}
-              <span className="italic text-gradient-gold">big standard of craft.</span>
-            </h1>
+            <h1 className="font-display text-5xl md:text-7xl max-w-4xl">A small studio with a <span className="italic text-gradient-gold">big standard of craft.</span></h1>
           </Reveal>
         </div>
       </section>
@@ -68,36 +43,26 @@ function AboutPage() {
         <div className="max-w-7xl mx-auto px-6 lg:px-10 grid md:grid-cols-2 gap-16 items-center">
           <Reveal>
             <div className="relative rounded-2xl overflow-hidden border border-border shadow-elegant">
-              <img
-                src={aboutImg}
-                alt="Vedanyaa team collaborating"
-                width={1280}
-                height={960}
-                loading="lazy"
-                className="w-full h-full object-cover"
-              />
+              <img src={aboutImg} alt="Vedanyaa team collaborating" width={1280} height={960} loading="lazy" className="w-full h-full object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-background/60 to-transparent" />
             </div>
           </Reveal>
           <Reveal delay={0.15}>
             <div className="text-xs uppercase tracking-[0.3em] text-gold mb-4">Our Story</div>
-            <h2 className="font-display text-4xl md:text-5xl">
-              Built by engineers who care about the work.
-            </h2>
+            <h2 className="font-display text-4xl md:text-5xl">Built by engineers who care about the work.</h2>
             <div className="mt-6 space-y-5 text-muted-foreground leading-relaxed text-lg">
               <p>
                 Vedanyaa Infotech was founded with a simple belief: software should be elegant,
-                reliable, and a genuine pleasure to use. We are a tight-knit team of senior
-                engineers and designers who choose depth over volume.
+                reliable, and a genuine pleasure to use. We are a tight-knit team of senior engineers
+                and designers who choose depth over volume.
               </p>
               <p>
                 Across seven years we've shipped products for startups, enterprises, retailers and
-                manufacturers — spanning PHP, MERN, Next.js, AI-driven apps, e-commerce and bespoke
-                ERP.
+                manufacturers — spanning PHP, MERN, Next.js, AI-driven apps, e-commerce and bespoke ERP.
               </p>
               <p>
-                Every engagement is led by a senior engineer, not handed off. Every line of code is
-                reviewed. Every milestone is demonstrated. That's how we earn — and keep — trust.
+                Every engagement is led by a senior engineer, not handed off. Every line of code
+                is reviewed. Every milestone is demonstrated. That's how we earn — and keep — trust.
               </p>
             </div>
           </Reveal>
@@ -109,10 +74,7 @@ function AboutPage() {
           <Reveal>
             <div className="text-center max-w-2xl mx-auto">
               <div className="text-xs uppercase tracking-[0.3em] text-gold mb-4">Our Values</div>
-              <h2 className="font-display text-4xl md:text-5xl">
-                Principles that shape{" "}
-                <span className="italic text-gradient-gold">every project.</span>
-              </h2>
+              <h2 className="font-display text-4xl md:text-5xl">Principles that shape <span className="italic text-gradient-gold">every project.</span></h2>
             </div>
           </Reveal>
           <div className="mt-16 grid md:grid-cols-2 lg:grid-cols-4 gap-6">

@@ -1,22 +1,7 @@
 const techs = [
-  "React",
-  "Node.js",
-  "Next.js",
-  "NestJS",
-  "MongoDB",
-  "PostgreSQL",
-  "TypeScript",
-  "PHP",
-  "Laravel",
-  "AI/ML",
-  "Python",
-  "Docker",
-  "AWS",
-  "Tailwind CSS",
-  "GraphQL",
-  "Redis",
-  "WordPress",
-  "Shopify",
+  "React", "Node.js", "Next.js", "NestJS", "MongoDB", "PostgreSQL",
+  "TypeScript", "PHP", "Laravel", "AI/ML", "Python", "Docker",
+  "AWS", "Tailwind CSS", "GraphQL", "Redis", "WordPress", "Shopify",
 ];
 
 export function TechMarquee() {
