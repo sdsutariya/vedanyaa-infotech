@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import { Reveal } from "@/components/Reveal";
 import { FloatingOrbs } from "@/components/FloatingOrbs";
-import { Mail, Phone, MapPin, Send, CheckCircle2 } from "lucide-react";
+import { Mail, MapPin, Send, CheckCircle2 } from "lucide-react";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
@@ -42,8 +42,7 @@ function Contact() {
             <h2 className="font-display text-3xl mb-8">Reach out directly</h2>
             <div className="space-y-6">
               {[
-                { icon: Mail, label: "Email", value: "hello@vedanyaa.com" },
-                { icon: Phone, label: "Phone", value: "+91 98765 43210" },
+                { icon: Mail, label: "Email", value: "info.vedanyaa@gmail.com" },
                 { icon: MapPin, label: "Location", value: "India · Serving Globally" },
               ].map((c) => (
                 <div key={c.label} className="flex gap-4 p-5 rounded-xl border border-border bg-card hover:border-gold/30 transition-all duration-300">

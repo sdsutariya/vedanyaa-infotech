@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail, MapPin } from "lucide-react";
 
 export function Footer() {
   return (
@@ -32,8 +32,7 @@ export function Footer() {
         <div>
           <h4 className="text-sm uppercase tracking-widest text-gold mb-4">Reach Us</h4>
           <ul className="space-y-3 text-sm text-muted-foreground">
-            <li className="flex gap-2"><Mail className="w-4 h-4 text-gold mt-0.5" /> hello@vedanyaa.com</li>
-            <li className="flex gap-2"><Phone className="w-4 h-4 text-gold mt-0.5" /> +91 98765 43210</li>
+            <li className="flex gap-2"><Mail className="w-4 h-4 text-gold mt-0.5" /> info.vedanyaa@gmail.com</li>
             <li className="flex gap-2"><MapPin className="w-4 h-4 text-gold mt-0.5" /> India · Remote Worldwide</li>
           </ul>
         </div>

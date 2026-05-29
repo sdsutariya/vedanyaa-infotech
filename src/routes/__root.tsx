@@ -90,7 +90,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           sameAs: [],
           contactPoint: {
             "@type": "ContactPoint",
-            email: "hello@vedanyaa.com",
+            email: "info.vedanyaa@gmail.com",
             contactType: "customer support",
             areaServed: "Worldwide",
           },
